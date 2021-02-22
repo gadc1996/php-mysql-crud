@@ -16,5 +16,6 @@ else{
 }
 
 //redirect to index 
+session_write_close();
 header('location: index.php');
 ?>
