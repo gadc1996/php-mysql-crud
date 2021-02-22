@@ -47,7 +47,7 @@ $result = $mysqli->query($query);
 			<td><?= $row['id']; ?></td>
 			<td><?= $row['title']; ?></td>
 			<td><?= $row['description']; ?></td>
-			<td><a href="">Delete</a><a href="">Update</a></td>
+			<td><a href="delete.php?id=<?= $row['id']; ?>">Delete</a><a href="">Update</a></td>
 		</tr>
 <?php } ?>
 </table>

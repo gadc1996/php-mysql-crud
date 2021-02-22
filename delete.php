@@ -3,9 +3,8 @@ session_start();
 include('includes/db-connection.php');
 
 //Values sent from index.php
-$title = $_POST['taskTitle'];
-$description= $_POST['taskDescription'];
-$query = "INSERT INTO tasks(title, description) VALUES('$title', '$description')";
+$id = $_GET['id'];
+$query = "DELETE FROM tasks WHERE id=$id";
 
 //MySQL query
 if($mysqli->query($query) == TRUE ){
@@ -13,11 +12,12 @@ if($mysqli->query($query) == TRUE ){
 }
 else{
 	$_SESSION['message'] = "Query Failed";
+	printf("ERROR:".$mysqli->error);
 }
 
 //Close session and allow other documents to write on it
 session_write_close();
 
-//Redirect to index 
+//redirect to index 
 header('location: index.php');
 ?>
