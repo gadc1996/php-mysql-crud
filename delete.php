@@ -8,7 +8,7 @@ $query = "DELETE FROM tasks WHERE id=$id";
 
 //MySQL query
 if($mysqli->query($query) == TRUE ){
-	$_SESSION['message'] = "Query Succesfull";
+	$_SESSION['message'] = "Item Deleted Succesfully";
 }
 else{
 	$_SESSION['message'] = "Query Failed";
