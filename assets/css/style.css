@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 1rem 2rem;
+  background-color: #333;
+}
+nav .nav-logo {
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+}
+nav .nav-logo:hover {
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
