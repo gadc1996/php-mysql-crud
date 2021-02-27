@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Main Form</title>
-</head>
-<body>
-	<form action="create.php" method="post">
-		<div class="form-control">
-			<label for="taskTitle">Task Title</label>
-			<input type="text" id="taskTitle" name="taskTitle" placeholder="Task Title">
-		</div>
-		<div class="form-control">
-			<label for="taskDescription">Task Description</label>
-			<input type="text" id="taskDescription" name="taskDescription"  placeholder="Task Title">
-		</div>
-		<button type="submit">Submit</button>
-	</form>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Main Form</title>
+		<link rel="stylesheet" href="../css/style.css" media="all">
+
+		<!--Google Fonts-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+		<!--Font Awesome-->
+		<script src="https://kit.fontawesome.com/1696329706.js" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<section class="main">
+			<form action="create.php" method="post" class="main-form">
+				<div class="form-control">
+					<label for="taskTitle" class="taskDescription">Task Title</label>
+					<input type="text" id="taskTitle" class="taskInput" name="taskTitle" placeholder="Task Title">
+				</div>
+				<div class="form-control">
+					<label for="taskDescription" class="taskDescription">Task Description</label>
+					<input type="text" id="taskDescription"class="taskInput" name="taskDescription"  placeholder="Task Description">
+				</div>
+				<button type="submit" class='button submit'>Add Task</button>
+			</form>
+			<table class="main-table">
+				<tr class="header-row row">
+					<th class="header cell">ID</th>
+					<th class="header cell">Title</th>
+					<th class="header cell">Description</th>
+					<th class="header cell">Actions</th>
+				</tr>
+				<tr class="row">
+					<td class="cell">qwer</td>
+					<td class="cell">qwer</td>
+					<td class="cell">qwer</td>
+					<td class="cell actions">
+						<a href="delete.php?id=" class="delete icon"><i class="fas fa-trash-alt"></i></a>
+						<a href="update.php?id=" class="edit icon"><i class="fas fa-edit"></i></a></td>
+				</tr>
+			</table>
+		</section>
+	</body>
 </html>

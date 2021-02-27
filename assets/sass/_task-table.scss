@@ -1,0 +1,59 @@
+@use 'colors';
+
+.main {
+	padding: 2rem;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+
+	.main-table {
+		width: 60%;
+		border-collapse: collapse;
+		border-spacing: 0;
+		.row {
+			.cell {
+				padding: 1rem;
+				border-top: 1px #bbb solid;
+				border-bottom: 1px #bbb solid;
+				text-align: center;
+			}
+			.actions {
+				display: flex;
+				justify-content: center;
+				.icon {
+					margin: 0 0.5rem;
+				}
+				.edit {
+					color: white;
+					background-color: colors.$blue;
+					padding: 0.75rem;
+					border-radius: 5px;
+				}
+				.edit:hover {
+					cursor: pointer;
+					background-color: colors.$hoverBlue;
+				}
+				.edit:active {
+					background-color: colors.$activeBlue;
+				}
+				.delete {
+					color: white;
+					background-color: colors.$red;
+					padding: 0.75rem;
+					border-radius: 5px;
+				}
+				.delete:hover {
+					cursor: pointer;
+					background-color: colors.$hoverRed;
+				}
+				.delete:active {
+					background-color: colors.$activeRed;
+				}
+			}
+		}
+		.header-row {
+			background-color: colors.$tableHeader;
+			color: white;
+		}
+	}
+}

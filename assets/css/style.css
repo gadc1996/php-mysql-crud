@@ -1,11 +1,20 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*Navbar*/
+/*Buttons*/
+/*Alerts*/
+/*Table*/
 nav {
   padding: 1rem 2rem;
-  background-color: #333;
+  background-color: #212529;
 }
 nav .nav-logo {
   color: white;
@@ -14,6 +23,131 @@ nav .nav-logo {
 }
 nav .nav-logo:hover {
   color: green;
+}
+
+.session-message-create {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #d4edda;
+}
+
+.session-message-edit {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #bee5eb;
+}
+
+.session-message-delete {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f8d7da;
+}
+
+.main {
+  padding: 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.main .main-form {
+  width: 20%;
+}
+.main .main-form .form-control {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.main .main-form .form-control .taskDescription {
+  padding: 0.2rem 0;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.main .main-form .form-control .taskInput {
+  padding: 0.5rem 1rem;
+  border-radius: 5%;
+  box-shadow: none;
+  border: none;
+}
+.main .main-form .form-control .taskInput::placeholder {
+  font-size: 1rem;
+}
+.main .main-form .button {
+  padding: 0.7rem 1.5rem;
+  width: 100%;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+}
+.main .main-form .button:hover {
+  background-color: #4c9f50;
+  cursor: pointer;
+}
+.main .main-form .button:active {
+  background-color: #487f50;
+}
+.main .main-form .button:focus {
+  background-color: #487f50;
+  border: solid 1px #0d0;
+}
+
+.main {
+  padding: 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.main .main-table {
+  width: 60%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.main .main-table .row .cell {
+  padding: 1rem;
+  border-top: 1px #bbb solid;
+  border-bottom: 1px #bbb solid;
+  text-align: center;
+}
+.main .main-table .row .actions {
+  display: flex;
+  justify-content: center;
+}
+.main .main-table .row .actions .icon {
+  margin: 0 0.5rem;
+}
+.main .main-table .row .actions .edit {
+  color: white;
+  background-color: #17a2b8;
+  padding: 0.75rem;
+  border-radius: 5px;
+}
+.main .main-table .row .actions .edit:hover {
+  cursor: pointer;
+  background-color: #138496;
+}
+.main .main-table .row .actions .edit:active {
+  background-color: #117a8b;
+}
+.main .main-table .row .actions .delete {
+  color: white;
+  background-color: #dc3545;
+  padding: 0.75rem;
+  border-radius: 5px;
+}
+.main .main-table .row .actions .delete:hover {
+  cursor: pointer;
+  background-color: #c82333;
+}
+.main .main-table .row .actions .delete:active {
+  background-color: #bd2130;
+}
+.main .main-table .header-row {
+  background-color: #212529;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

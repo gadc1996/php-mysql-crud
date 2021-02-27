@@ -10,6 +10,7 @@ $query = "INSERT INTO tasks(title, description) VALUES('$title', '$description')
 //MySQL query
 if($mysqli->query($query) == TRUE ){
 	$_SESSION['message'] = "Item Created Successfully";
+	$_SESSION['type'] = "create";
 }
 else{
 	$_SESSION['message'] = "Query Failed";
