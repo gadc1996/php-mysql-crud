@@ -1,1 +1,1 @@
-<nav><a class="nav-logo" href="#">PHP MySQL CRUD</a></nav>
+<nav><a class="nav-logo" href="index.php">PHP MySQL CRUD</a></nav>

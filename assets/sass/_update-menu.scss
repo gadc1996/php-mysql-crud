@@ -1,0 +1,55 @@
+@use 'colors';
+@use 'mixings';
+
+.update {
+	padding: 2rem;
+	width: 100%;
+
+	.main-form {
+		width: 50%;
+		margin: auto;
+		.form-control {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: 1rem 0;
+
+			.taskDescription {
+				padding: 0.2rem 0;
+				font-size: 1.4rem;
+				font-weight: 900;
+			}
+			.taskInput {
+				padding: 0.5rem 1rem;
+				border-radius: 5%;
+				box-shadow: none;
+				border: none;
+			}
+			.taskInput::placeholder {
+				font-size: 1rem;
+			}
+		}
+
+		.button {
+			@include mixings.button;
+			background-color: colors.$green;
+		}
+		.button:hover {
+			background-color: colors.$hoverGreen;
+			cursor: pointer;
+		}
+		.button:active {
+			background-color: colors.$activeGreen;
+		}
+		.button:focus {
+			background-color: colors.$activeGreen;
+			border: solid 1px #0d0;
+		}
+	}
+	.button {
+		@include mixings.button;
+		background-color: colors.$red;
+		width: 50%;
+		margin: 0.5rem auto;
+	}
+}

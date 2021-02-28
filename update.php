@@ -31,7 +31,7 @@ $description = $result['description'];
 //... and display it on a form
 ?>
 
-<section class="main">
+<section class="update">
 	<form action="update.php?id=<?= $id; ?>" method="post" class="main-form">
 	<?php
 		//Check if a message from a query exist
@@ -55,7 +55,7 @@ $description = $result['description'];
 		</div>
 		<button type="submit" class='button submit'>Add Task</button>
 </form>
-	<a href="index.php"><button>Back</button></a>
+	<a href="index.php"><button class="button back">Back</button></a>
 
 </section>
 <?php
